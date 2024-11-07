@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Happy birthday</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <canvas id="c"></canvas>
+    <script src="script.js"></script>
+    <audio id="audio" src="audio.mp3"></audio>
+    <script>
+      document.addEventListener(
+        "click",
+        function () {
+          var audio = document.getElementById("audio");
+          audio.play();
+        },
+        { once: false }
+      );
+    </script>
+  </body>
+</html>
